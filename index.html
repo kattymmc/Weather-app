@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
@@ -11,16 +13,17 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Weather app</title>
 </head>
+
 <body>
     <div class="container border border-primary border-3 rounded-1 mt-3 mb-3">
         <div class="search">
             <form class="form-inline" id="search-form">
-                    <label for="search">Enter a city </label>
-                    <input class="form-control" type="search" placeholder="Search" id="search">
-                    <input class="btn btn-success" type="submit" value="Search"/>
+                <label for="search">Enter a city </label>
+                <input class="form-control" type="search" placeholder="Search" id="search">
+                <input class="btn btn-success" type="submit" value="Search" />
             </form>
         </div>
-        <br/>
+        <br />
         <div class="row border-bottom border-top border-primary border-2 pt-2 pb-2">
             <div class="col-3 border-end border-2 border-primary">
                 <h2>Locations</h2>
@@ -42,9 +45,9 @@
                         <li>Wind: <span id="wind">11</span> m/s</li>
                     </ul>
                 </div>
-                <div class="col"> 
-                        <img class="main-image" src="img/cloud-sun.png">
-                        <span id="degrees">20</span> <a href="#" id="celcius">°C</a> | <a href="#" id="farenheit">°F</a>
+                <div class="col">
+                    <img class="main-image" src="img/cloud-sun.png">
+                    <span id="degrees">20</span> <a href="#" id="celcius">°C</a> | <a href="#" id="farenheit">°F</a>
                     <ul class="forecast">
                         <li id="current-time">Friday 10:00 a.m.</li>
                         <li id="description">Cloudy</li>
@@ -135,6 +138,8 @@
             </ul>
         </div>
     </div>
+    <p><a href="https://github.com/kattymmc/Weather-app" target="_blank" rel="noreferrer">
+            Open-source code</a> by Katherine Miraval</p>
     <script src="src/app.js"></script>
 </body>
 </html>
