@@ -1,0 +1,92 @@
+body{
+    font-family: 'Play', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h2{
+    font-weight: 700;
+}
+
+p{
+    text-align: center;
+}
+
+span#city, span#degrees {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#description {
+    text-transform: capitalize;
+}
+
+.container{
+    background-image: url(../img/mario-bros-bg.jpg);
+    background-repeat: repeat-x;
+    padding: 15px 15px 150px;
+    width: 60%;
+}
+
+.day-temperature{
+    list-style: none;
+    margin: 0px;
+    text-align: center;
+}
+
+.day-temperature img{
+    width: 50px;
+}
+
+.day-temperature li{ 
+    border-radius: 5px;
+    display: inline-block;
+    padding: 0 9px;
+    transition: all 200ms ease-in-out;
+}
+
+.day-temperature li:hover{
+    background-color: #ffe9d1;
+}
+
+.day-temperature p{
+    margin: 0px;
+}
+
+.forecast{
+    padding-left: 0px;
+}
+
+.forecast li{
+    list-style: none;
+}
+
+.locations{
+    padding-left: 0px;
+}
+
+.locations-container{
+    border-right: 1px solid black;
+}
+
+.locations li{
+    line-height: 30px;
+    list-style: none;
+}
+
+.main-image{
+    vertical-align: top;
+    width: 90px;
+}
+
+.search{
+    text-align: center;
+}
+
+.search #search{
+    width: 30%;
+    display: inline;
+} 
