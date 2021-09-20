@@ -19,7 +19,7 @@
         <div class="search">
             <form class="form-inline" id="search-form">
                 <label for="search">Enter a city </label>
-                <input class="form-control" type="search" placeholder="Search" id="search">
+                <input class="form-control" type="search" placeholder="Search" id="search" autocomplete="off">
                 <input class="btn btn-success" type="submit" value="Search" />
             </form>
         </div>
@@ -38,19 +38,19 @@
             </div>
             <div class="col row">
                 <div class="col">
-                    <h2><span id="city">Lima</span></h2>
+                    <h2><span id="city"></span></h2>
                     <ul class="forecast">
-                        <li>Pressure: <span id="pressure">1040</span> hPa</li>
-                        <li>Humidity: <span id="humidity">26</span>%</li>
-                        <li>Wind: <span id="wind">11</span> m/s</li>
+                        <li>Pressure: <span id="pressure"></span> hPa</li>
+                        <li>Humidity: <span id="humidity"></span>%</li>
+                        <li>Wind: <span id="wind"></span> m/s</li>
                     </ul>
                 </div>
                 <div class="col">
-                    <img class="main-image" src="img/cloud-sun.png">
-                    <span id="degrees">20</span> <a href="#" id="celcius">°C</a> | <a href="#" id="farenheit">°F</a>
+                    <img class="main-image" id="icon" src="img/cloud-sun.png">
+                    <span id="degrees">20</span> <a href="#" id="celcius" class="active">°C</a> | <a href="#" id="farenheit">°F</a>
                     <ul class="forecast">
-                        <li id="current-time">Friday 10:00 a.m.</li>
-                        <li id="description">Cloudy</li>
+                        <li>Last updated: <span id="current-time"></span></li>
+                        <li id="description"></li>
                     </ul>
                 </div>
                 <div>

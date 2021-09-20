@@ -4,7 +4,6 @@ body{
 
 div a{
     text-decoration: none;
-    color: black;
 }
 
 h2{
@@ -20,15 +19,25 @@ span#city, span#degrees {
     font-weight: bold;
 }
 
-#description {
+#description::first-letter {
     text-transform: capitalize;
+}
+
+.active{
+    color: black;
+    cursor: default;
+}
+.active:hover{
+    color: black;
 }
 
 .container{
     background-image: url(../img/mario-bros-bg.jpg);
+    background-position: bottom;
     background-repeat: repeat-x;
+    background-color: #ADE5FE;
     padding: 15px 15px 150px;
-    width: 60%;
+    max-width: 800px;
 }
 
 .day-temperature{
