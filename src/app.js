@@ -27,7 +27,7 @@ function icons(){
   }
   return iconsObj;
 }
-function formatDate(timestamp){
+function formatDateDay(timestamp){
   let date = new Date(timestamp * 1000);
   let day = date.getDay();
   let days = ["Sun", "Mon", "Tue", "Wen", "Thu", "Fri", "Sat"];
@@ -61,7 +61,7 @@ function displayForecast(response){
       let iconImage = icons()[forecastDay.weather[0].icon];
       forecastHTML += `
       <div class="col-2">
-        <div class="weather-forecast-date">${formatDate(forecastDay.dt)}</div>
+        <div class="weather-forecast-date">${formatDateDay(forecastDay.dt)}</div>
         <img src="img/${iconImage}.png" alt="" width="50"/>
         <div class="weather-forecast-temperature">
             <span class="weather-forecast-temperature-max">${Math.round(forecastDay.temp.max)}°</span>
