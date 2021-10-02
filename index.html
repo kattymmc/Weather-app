@@ -28,21 +28,23 @@
             <div class="col-3 border-end border-2 border-primary">
                 <h2>Locations</h2>
                 <ul class="locations">
-                    <li><a href="#">Lisbon</a></li>
-                    <li><a href="#">Paris</a></li>
-                    <li><a href="#">Sydney</a></li>
-                    <li><a href="#">San Francisco</a></li>
-                    <li><a href="#">Tokyo</a></li>
+                    <li><a href="#" id="lisbon">Lisbon</a></li>
+                    <li><a href="#" id="paris">Paris</a></li>
+                    <li><a href="#" id="sydney">Sydney</a></li>
+                    <li><a href="#" id="san-francisco">San Francisco</a></li>
+                    <li><a href="#" id="tokyo">Tokyo</a></li>
                 </ul>
-                <button id="current" class="btn btn-danger">Current</button>
+                <div class="d-grid gap-2">
+                    <button id="current" class="btn btn-danger block">Current</button>
+                </div>
             </div>
             <div class="col row">
                 <div class="col">
                     <h2><span id="city"></span></h2>
                     <ul class="forecast">
-                        <li>Pressure: <span id="pressure"></span> hPa</li>
-                        <li>Humidity: <span id="humidity"></span>%</li>
-                        <li>Wind: <span id="wind"></span> m/s</li>
+                        <li><strong>Pressure: </strong><span id="pressure"></span> hPa</li>
+                        <li><strong>Humidity: </strong><span id="humidity"></span>%</li>
+                        <li><strong>Wind: </strong><span id="wind"></span> m/s</li>
                     </ul>
                 </div>
                 <div class="col">
@@ -54,88 +56,20 @@
                     </ul>
                 </div>
                 <div>
-                    <ul class="day-temperature">
-                        <li>
-                            <p>11 a.m.</p>
-                            <p><img src="img/sun.png"></p>
-                            <p>19°</p>
-                        </li>
-                        <li>
-                            <p>12 p.m.</p>
-                            <p><img src="img/sun.png"></p>
-                            <p>19°</p>
-                        </li>
-                        <li>
-                            <p>1 p.m.</p>
-                            <p><img src="img/cloud-sun.png"></p>
-                            <p>17°</p>
-                        </li>
-                        <li>
-                            <p>2 p.m.</p>
-                            <p><img src="img/cloud-sun.png"></p>
-                            <p>17°</p>
-                        </li>
-                        <li>
-                            <p>3 p.m.</p>
-                            <p><img src="img/rain.png"></p>
-                            <p>14°</p>
-                        </li>
-                        <li>
-                            <p>4 p.m.</p>
-                            <p><img src="img/rain.png"></p>
-                            <p>14°</p>
-                        </li>
-                    </ul>
+                    <div class="weather-hourly-forecast" id="hourly-forecast"></div>
                 </div>
             </div>
         </div>
-        <div class="row mt-3">
-            <div class="col-2">
+        <div class="row mt-3 daily-forecast">
+            <!--div class="col-2">
                 <div class="btn-group-vertical">
                     <button type="button" class="btn btn-danger">Temperature</button>
                     <button type="button" class="btn btn-danger">Precipitation</button>
                     <button type="button" class="btn btn-danger">Wind</button>
                 </div>
-            </div>
-            <div class="col-10">
-                <ul class="day-temperature">
-                    <li>
-                        <p>Fri</p>
-                        <p><img src="img/sun.png"></p>
-                        <p><strong>19°</strong>/14°</p>
-                    </li>
-                    <li>
-                        <p>Sat</p>
-                        <p><img src="img/rain.png"></p>
-                        <p><strong>14°</strong>/14°</p>
-                    </li>
-                    <li>
-                        <p>Sun</p>
-                        <p><img src="img/sun.png"></p>
-                        <p><strong>19°</strong>/14°</p>
-                    </li>
-                    <li>
-                        <p>Mon</p>
-                        <p><img src="img/cloud-sun.png"></p>
-                        <p><strong>17°</strong>/14°</p>
-                    </li>
-                    <li>
-                        <p>Tue</p>
-                        <p><img src="img/cloud-sun.png"></p>
-                        <p><strong>17°</strong>/14°</p>
-                    </li>
-                    <li>
-                        <p>Wen</p>
-                        <p><img src="img/rain.png"></p>
-                        <p><strong>14°</strong>/14°</p>
-                    </li>
-                    <li>
-                        <p>Thu</p>
-                        <p><img src="img/rain.png"></p>
-                        <p><strong>14°</strong>/14°</p>
-                    </li>
-            </div>
-            </ul>
+            </div-->
+            <h2>Daily Forecast</h2>
+            <div class="weather-forecast" id="forecast"></div>
         </div>
     </div>
     <p><a href="https://github.com/kattymmc/Weather-app" target="_blank" rel="noreferrer">
